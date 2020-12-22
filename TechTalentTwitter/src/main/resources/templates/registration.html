@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 
 <head>
-	<meta charset="UTF=8">
+	<meta charset+"UTF=8">
 	<meta name="viewpoint" content="width=device-width, intital-scale=1.0">
 	
     <title>Registration</title>
@@ -42,6 +42,10 @@
             <div class="form-group">
                 <button class="btn btn-md btn-success btn-block" name="Submit" value="Submit" type="Submit" th:text="Submit"></button>
             </div>
+            <div align="center" th:if="${}">
+				<h4 style="color: green">Registration Successful.</4>
+			</div>
         </form>
     </div>
 </body>
+</html>
